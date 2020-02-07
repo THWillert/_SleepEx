@@ -1,38 +1,3 @@
-Global $_SLEEPEX_CORR
-
-Main()
-
-Func Main()
-    ; Laufzeitkorrektur fuer _SleepEx()
-    ; - stimmt nicht ganz, macht aber dennoch das Ergebnis etwas genauer
-    _SleepEx_Corr()
-    ConsoleWrite($_SLEEPEX_CORR & @CRLF)
-
-    MsgBox(0,"2 Minuten, 15 Sekunden und 4 ms:", _2MS("0:2:15:4"))
-
-    Local $t = TimerInit()
-    _SleepEx("00:00:02:0100") ; 2 sec, 100 ms
-    ConsoleWrite(TimerDiff($t) & @CRLF)
-
-    Local $t = TimerInit()
-    _SleepEx("0:0:0:4") ; 4 ms !!!
-    ConsoleWrite(TimerDiff($t) & @CRLF)
-
-    Local $t = TimerInit()
-    Sleep(_MS("0:0:1:20")) ; 1 sec 20 ms
-    ConsoleWrite(TimerDiff($t) & @CRLF)
-
-    $t = TimerInit()
-    _SleepEx(2) ; 2 sec
-    ConsoleWrite(TimerDiff($t) & @CRLF)
-
-    $t = TimerInit()
-    _SleepEx(1, "m") ; 1 min
-    ConsoleWrite(TimerDiff($t) & @CRLF)
-
-
-EndFunc   ;==>Main
-
 ; #FUNCTION# ===================================================================
 ; Name ..........: _SleepEx_Corr
 ; Description ...: Correction time for _SleepEx
