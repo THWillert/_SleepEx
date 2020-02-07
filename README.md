@@ -1,10 +1,10 @@
 # _SleepEx
 Funktionssammlung für AutoIt, für ein präziseres Sleep und eine einfachere Angabe von Millisekunden
 
-* _SleepEx: eine "handlichere" Version von Sleep inklusiv einem Zeitbereich von Micro-Sekunden bis zu mehreren Tagen
-+ verwendet die Funktion _HighPrecisionSleep(): ist wesentlich genauer als Sleep
-* _MS: Wandelt einfache Angaben in ms um (inklusiv Laufzeitkoorektur und direkter Verwendung mit Sleep bzw. _SleepEx)
-* _2MS: Direkte Rückgabe des Millisekunden Wertes
+- _SleepEx: eine "handlichere" Version von Sleep inklusiv einem Zeitbereich von Micro-Sekunden bis zu mehreren Tagen
+- verwendet die Funktion _HighPrecisionSleep(): ist wesentlich genauer als Sleep
+- _MS: Wandelt einfache Angaben in ms um (inklusiv Laufzeitkoorektur und direkter Verwendung mit Sleep bzw. _SleepEx)
+- _2MS: Direkte Rückgabe des Millisekunden Wertes
 
 ## Funktionsaufruf und Beispiel
 
