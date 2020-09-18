@@ -77,7 +77,7 @@ Thorsten Willert
 
 Andreas Karlsson (monoceres) - Function: _HighPrecisionSleep
 
-[Homepage](http://www.thorsten-willert.de/)
+[Homepage](https://www.thorsten-willert.de/software/autoit/autoit-funktionen/_sleepex)
 
 ## Lizenz
 Das Ganze steht unter der [MIT](https://github.com/THWillert/HomeMatic_CSS/blob/master/LICENSE) Lizenz
